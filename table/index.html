@@ -1,0 +1,83 @@
+<style>
+    @font-face {
+        font-family: myFirstFont;
+        src: url("fonts/DBHeavent-MedCond.woff2");
+        font-weight: bold;
+    }
+
+    body {
+        font-family: myFirstFont;
+    }
+
+    .content-table{
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 1.4em;
+        min-width: 400px;
+    }
+
+    .content-table thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .content-table th, .content-table td {
+        padding: 12px 15px;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+        font-weight: bold;
+        color: #009879;
+    }
+
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+</style>
+
+<body>
+    <h1>Styling Table</h1>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Domenci</td>
+                <td>88,118</td>
+                <td>dcode</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sally</td>
+                <td>72,400</td>
+                <td>Students</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Billa</td>
+                <td>99,400</td>
+                <td>bobo</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Billa</td>
+                <td>99,400</td>
+                <td>bobo</td>
+            </tr>
+        </tbody>
+    </table>
+</body>

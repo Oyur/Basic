@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        /* .wrapper {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+        }
+
+        .wrapper > * {
+            padding: 10px;
+            margin: 10px;
+            flex: 1 100%;
+        }
+
+        .header {
+            background-color: #FFCC00;
+            height: 120px;
+        }
+
+        .footer {
+            background-color: #66ccFF;
+            height: 80px;
+            order: 4;
+        }
+
+        .main {
+            background-color: #FF6667;
+            height: 300px;
+            order: 2;
+            flex: 3;
+        }
+
+        .side1 {
+            background-color: #65CC99;
+            order: 1;
+        }
+
+        .side2 {
+            background-color: #9999FF;
+            order: 2;
+        }
+
+        .side {
+            flex: 1 1 auto;
+        } */
+
+        .wrapper2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .main2 {
+            background-color: #65CC99;
+            flex: 1;
+            height: 300px;
+        }
+
+        .main3 {
+            background-color: #FF6667;
+            flex: 3;
+            height: 300px;
+        }
+
+        .main4 {
+            background-color: #9999FF;
+            flex: 1;
+            height: 300px;
+        }
+
+        .wrapper2 > * {
+            padding: 10px;
+            margin: 10px;
+            /* flex: 1 100%; */
+        }
+
+        @media all and (max-width: 800px) {
+            .main2 {
+                flex: 0 1 100%;
+                /* flex-basis: 100%; */
+            }
+
+            .main3 {
+                flex: 1 1 auto;
+            }
+
+            .main4 {
+                flex: 1 1 auto;
+            }
+        }
+
+        @media all and (max-width: 600px) {
+            .main2 {
+                flex: 0 1 100%;
+                /* flex-basis: 100%; */
+            }
+
+            .main3 {
+                flex: 0 1 100%;
+            }
+
+            .main4 {
+                flex: 0 1 100%;
+            }
+        }
+
+        /* @media all and (min-width: 800px) {
+            .main {
+                flex: 3;
+            }
+
+            .side1 {
+                order: 1;
+            }
+
+            .side2 {
+                order: 2;
+            }
+
+            .main {
+                order: 2;
+            }
+
+            .footer {
+                order: 4;
+            }
+        } */
+
+        /* @media all and (max-width: 600px) {
+            .side {
+                flex: 1;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <!-- <div class="wrapper">
+        <header class="header"></header>
+
+        <div class="main"></div>
+
+        <div class="side side1"></div>
+
+        <div class="side side2"></div>
+
+        <footer class="footer"></footer>
+    </div> -->
+
+    <div class="wrapper2">
+        <div class="main2"></div>
+        <div class="side2 main3"></div>
+        <div class="side2 main4"></div>
+    </div>
+</body>
+</html>

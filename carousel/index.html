@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="flex justify-center items-center h-screen gap-4 relative">
+        <div class="cursor-pointer hover:bg-gray-300 rounded-full p-2" onclick="plusSlides(-1)">prev</div>
+        <div class="mySlides flex flex-col justify-center bg-gray-600 text-gray-50 w-64 p-4 rounded-2xl text-center shadow-xl">
+            <img class="object-cover w-[250px] h-[200px] rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNOo94PSbMlSdF3m0kZjXnHZtywwkx6iDhnA&usqp=CAU" alt="profile"/>
+            <div class="text-xl font-semibold">John</div>
+            <div class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <button class="bg-indigo-500 text-gray-50 rounded-xl mx-8 hover:bg-indigo-900 my-2 p-2">Read more...</button>
+        </div>
+        <div class="mySlides flex flex-col justify-center bg-gray-600 text-gray-50 w-64 p-4 rounded-2xl text-center shadow-xl">
+            <img class="object-cover w-[250px] h-[200px] rounded-2xl" src="https://static.vecteezy.com/system/resources/previews/009/393/596/original/cute-cartoon-people-man-and-woman-drawing-free-png.png" alt="profile"/>
+            <div class="text-xl font-semibold">Do</div>
+            <div class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <button class="bg-indigo-500 text-gray-50 rounded-xl mx-8 hover:bg-indigo-900 my-2 p-2">Read more...</button>
+        </div>
+        <div class="cursor-pointer hover:bg-gray-300 rounded-full p-2" onclick="plusSlides(1)">next</div>
+    </div>
+</body>
+</html>
